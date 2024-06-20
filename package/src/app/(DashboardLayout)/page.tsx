@@ -2,6 +2,7 @@
 import { Grid, Box } from '@mui/material';
 import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
 // components
+import { Typography } from '@mui/material';
 import SalesOverview from '@/app/(DashboardLayout)/components/dashboard/SalesOverview';
 import YearlyBreakup from '@/app/(DashboardLayout)/components/dashboard/YearlyBreakup';
 import RecentTransactions from '@/app/(DashboardLayout)/components/dashboard/RecentTransactions';
@@ -12,10 +13,10 @@ import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/Monthl
 const Dashboard = () => {
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
-      <Typography variant="h2" gutterBottom>
-              Welcome to your Dashboard 👋
-            </Typography>
-            <Box>
+<Typography variant="h2" gutterBottom sx={{ marginBottom: 3 }}>
+        Welcome to your Dashboard 👋
+      </Typography>
+      <Box>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={8}>
             <SalesOverview />
