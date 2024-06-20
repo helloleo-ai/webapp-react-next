@@ -12,7 +12,7 @@ import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/Monthl
 
 const Dashboard = () => {
   return (
-    <PageContainer title="Dashboard" description="this is Dashboard">
+    <PageContainer title="My Dashboard" description="this is Dashboard">
 <Typography variant="h2" gutterBottom sx={{ marginBottom: 3 }}>
         Welcome to your Dashboard 👋
       </Typography>
