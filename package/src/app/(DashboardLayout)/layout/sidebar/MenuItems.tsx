@@ -16,11 +16,12 @@ const Menuitems = [
     subheader: "Home",
   },
 
-  {
+{
     id: uniqueId(),
-    title: "Dashboard",
+    title: "Dasboard",
     icon: IconLayoutDashboard,
     href: "/",
+}
   },
   {
     navlabel: true,
