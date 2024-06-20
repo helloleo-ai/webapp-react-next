@@ -15,13 +15,11 @@ const Menuitems = [
     navlabel: true,
     subheader: "Home",
   },
-
-{
+  {
     id: uniqueId(),
     title: "Dasboard",
     icon: IconLayoutDashboard,
     href: "/",
-}
   },
   {
     navlabel: true,
