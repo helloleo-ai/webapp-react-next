@@ -1,6 +1,6 @@
-# 🌟 Modernize Next.js Admin Template 🌟
+# 🌟 Demo Dashboard 🌟
 
-Welcome to the **Modernize Next.js Admin Template**! This project is built with [Next.js](https://nextjs.org/) and comes with a lot of awesome features to kickstart your admin panel development.
+Welcome to the **Demo Dashboard**! This project is built with [Next.js](https://nextjs.org/) and comes with a lot of awesome features to kickstart your admin panel development.
 
 ## 🚀 Getting Started
 
