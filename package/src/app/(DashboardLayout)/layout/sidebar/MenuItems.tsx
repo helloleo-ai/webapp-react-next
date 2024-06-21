@@ -19,7 +19,7 @@ const Menuitems = [
     id: uniqueId(),
     title: "Dasboard",
     icon: IconLayoutDashboard,
-    href: "/",
+    href: "/authentication/login",
   },
   {
     navlabel: true,
@@ -29,7 +29,7 @@ const Menuitems = [
     id: uniqueId(),
     title: "Login",
     icon: IconLogin,
-    href: "/authentication/login",
+    href: "/",
   },
   {
     id: uniqueId(),
