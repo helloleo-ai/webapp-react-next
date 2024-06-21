@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml">
+  <w:body>
+    <w:p>
+      <w:r>
+        <w:t>Next.js Dashboard Application - User Guide</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Overview</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>This application is a dashboard built with Next.js and styled using Material-UI. It provides a comprehensive set of features designed to help users manage their projects, profiles, and data with ease. Below is a guide to the features available in this application:</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Features</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="0" w:type="auto" />
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" />
+          <w:left w:val="single" w:sz="4" />
+          <w:bottom w:val="single" w:sz="4" />
+          <w:right w:val="single" w:sz="4" />
+          <w:insideH w:val="single" w:sz="4" />
+          <w:insideV w:val="single" w:sz="4" />
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Dashboard</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>The main area where users can view their key metrics, stay updated with recent transactions, and monitor their project performance.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Login and Registration</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Allows users to securely sign in and sign up.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Sales Overview</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Shows monthly sales data, represented in a bar chart for easy visualization.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Yearly Breakup</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Displays annual earnings with percentages, shown within a donut chart for clear representation.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Recent Transactions</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>A chronological timeline of transactions made, ensuring users can track their latest activities.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Product Performance</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Provides insights into product performance metrics, such as sales and priorities for specific products.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Blog</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Showcases featured products with ratings, pricing, and promotional offers.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Documentation</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>A dedicated section to guide users on app functionalities and offering insights into the application's features.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p>
+      <w:r>
+        <w:t>How to Navigate</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>This dashboard interface is designed to be user-friendly and intuitive. Use the sidebar on the left to navigate to different sections. Each section provides detailed insights and allows for interaction with the data presented. The header contains quick links to essential features like notifications and user profile settings.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>Support</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:r>
+        <w:t>If you encounter any issues or have questions regarding the dashboard, please reach out to our support team at support@example.com.</w:t>
+      </w:r>
+    </w:p>
+  </w:body>
+</w:document>
