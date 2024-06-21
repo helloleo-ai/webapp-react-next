@@ -29,7 +29,7 @@ const Menuitems = [
     id: uniqueId(),
     title: "Login",
     icon: IconLogin,
-    href: "/",
+    href: "/dashboard",
   },
   {
     id: uniqueId(),
