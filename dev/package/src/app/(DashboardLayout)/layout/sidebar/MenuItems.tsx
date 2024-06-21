@@ -1,5 +1,5 @@
 <<<<<<< SEARCH
-    title: "Dasboard",
+    title: "Dashboard",
 =======
     title: "Dashboard",
 >>>>>>> REPLACE

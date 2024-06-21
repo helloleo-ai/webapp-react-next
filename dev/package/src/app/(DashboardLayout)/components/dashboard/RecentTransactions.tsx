@@ -1,5 +1,5 @@
 <<<<<<< SEARCH
-    <DashboardCard title="Resent Transections">
+    <DashboardCard title="Recent Transactions">
 =======
     <DashboardCard title="Recent Transactions">
 >>>>>>> REPLACE
