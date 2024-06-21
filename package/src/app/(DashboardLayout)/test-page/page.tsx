@@ -5,9 +5,9 @@ import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCa
 
 const TestPage = () => {
   return (
-<PageContainer title="Test Pgae" description="this is a TesT pgae">
-      <DashboardCard title="Test Pgae">
-        <Typography>Tihs is a test pgae</Typography>
+<PageContainer title="Test Page" description="this is a Test page">
+      <DashboardCard title="Test Page">
+        <Typography>This is a test page</Typography>
       </DashboardCard>
     </PageContainer>
   );
