@@ -1,0 +1,47 @@
+# Modernize Next.js Admin Template - User Guide
+
+## Table of Contents
+1. Introduction
+2. Getting Started
+   - Prerequisites
+   - Installation Instructions
+3. Features Overview
+   - Dashboard
+   - Authentication
+   - Notifications
+   - User Profiles
+   - Applications
+   - Error Pages
+4. Detailed Views
+   - Dashboard
+     - Welcome Message
+     - Sales Overview
+     - Yearly Breakup
+     - Monthly Earnings
+     - Recent Transactions
+     - Product Performance
+     - Blog
+   - Authentication
+     - Login
+     - Register
+   - Profile and Notifications
+5. Customization Options
+6. Contact and Support
+
+## 1. Introduction
+
+Welcome to the Modernize Next.js Admin Template! This is a comprehensive user guide designed to help you navigate and utilize the various features of our admin template. Whether you're a beginner or an experienced developer, this guide will provide you with all the necessary information to get the most out of your dashboard.
+
+## 2. Getting Started
+
+### Prerequisites
+
+Before you can start using the Modernize Next.js Admin Template, you need to ensure you have the following installed:
+- Node.js (v12.x or later)
+- npm or yarn
+
+### Installation Instructions
+
+1. Clone the repository:
+
+   
