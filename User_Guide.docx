@@ -1,186 +1,86 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<w:document xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mo="http://schemas.microsoft.com/office/mac/office/2008/main" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml">
-  <w:body>
-    <w:p>
-      <w:r>
-        <w:t>Next.js Dashboard Application - User Guide</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:r>
-        <w:t>Overview</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:r>
-        <w:t>This application is a dashboard built with Next.js and styled using Material-UI. It provides a comprehensive set of features designed to help users manage their projects, profiles, and data with ease. Below is a guide to the features available in this application:</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:r>
-        <w:t>Features</w:t>
-      </w:r>
-    </w:p>
-    <w:tbl>
-      <w:tblPr>
-        <w:tblW w:w="0" w:type="auto" />
-        <w:tblBorders>
-          <w:top w:val="single" w:sz="4" />
-          <w:left w:val="single" w:sz="4" />
-          <w:bottom w:val="single" w:sz="4" />
-          <w:right w:val="single" w:sz="4" />
-          <w:insideH w:val="single" w:sz="4" />
-          <w:insideV w:val="single" w:sz="4" />
-        </w:tblBorders>
-      </w:tblPr>
-      <w:tr>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Dashboard</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>The main area where users can view their key metrics, stay updated with recent transactions, and monitor their project performance.</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Login and Registration</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Allows users to securely sign in and sign up.</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Sales Overview</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Shows monthly sales data, represented in a bar chart for easy visualization.</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Yearly Breakup</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Displays annual earnings with percentages, shown within a donut chart for clear representation.</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Recent Transactions</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>A chronological timeline of transactions made, ensuring users can track their latest activities.</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Product Performance</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Provides insights into product performance metrics, such as sales and priorities for specific products.</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Blog</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Showcases featured products with ratings, pricing, and promotional offers.</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-      <w:tr>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>Documentation</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-        <w:tc>
-          <w:p>
-            <w:r>
-              <w:t>A dedicated section to guide users on app functionalities and offering insights into the application's features.</w:t>
-            </w:r>
-          </w:p>
-        </w:tc>
-      </w:tr>
-    </w:tbl>
-    <w:p>
-      <w:r>
-        <w:t>How to Navigate</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:r>
-        <w:t>This dashboard interface is designed to be user-friendly and intuitive. Use the sidebar on the left to navigate to different sections. Each section provides detailed insights and allows for interaction with the data presented. The header contains quick links to essential features like notifications and user profile settings.</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:r>
-        <w:t>Support</w:t>
-      </w:r>
-    </w:p>
-    <w:p>
-      <w:r>
-        <w:t>If you encounter any issues or have questions regarding the dashboard, please reach out to our support team at support@example.com.</w:t>
-      </w:r>
-    </w:p>
-  </w:body>
-</w:document>
+=======
+# Dashboard Application User Guide
+
+Welcome to your Dashboard! This guide provides an overview of the features available in your application.
+
+## Table of Contents
+
+1. [Dashboard Overview](#overview)
+2. [Navigation Sidebar](#sidebar)
+3. [Header and Notifications](#header)
+4. [Dashboard Components](#components)
+    - [Sales Overview](#sales-overview)
+    - [Yearly Breakup](#yearly-breakup)
+    - [Product Performance](#product-performance)
+    - [Recent Transactions](#recent-transactions)
+    - [Blog](#blog)
+5. [Authentication](#authentication)
+    - [Login](#login)
+    - [Register](#register)
+6. [Sample Page](#sample-page)
+7. [Documentation Page](#documentation)
+
+## <a name="overview"></a>1. Dashboard Overview
+
+The Dashboard Application provides a user-friendly interface to monitor and manage various aspects of your business. The main components include the navigation sidebar, the header with notifications, and various dashboard cards displaying important metrics and data.
+
+## <a name="sidebar"></a>2. Navigation Sidebar
+
+The sidebar allows you to navigate between different sections of the application:
+
+- **Dasboard**: The main dashboard page.
+- **Login**: Navigate to the login page.
+- **Register**: Navigate to the registration page.
+
+The sidebar also has a "Sign Up" prompt for users without an account.
+
+## <a name="header"></a>3. Header and Notifications
+
+The header contains the following elements:
+
+- **Sidebar Toggle**: Toggle the sidebar on mobile view.
+- **Notifications**: View recent notifications.
+- **User Profile**: Access your profile settings, account details, and tasks. Also provides an option to log out.
+
+## <a name="components"></a>4. Dashboard Components
+
+### <a name="sales-overview"></a>Sales Overview
+
+This component displays a bar chart showing the earnings and expenses for the selected month. You can choose the month from a dropdown menu.
+
+### <a name="yearly-breakup"></a>Yearly Breakup
+
+The Yearly Breakup card provides a donut chart representing the earnings for the past few years, with a comparison between different years.
+
+### <a name="product-performance"></a>Product Performance
+
+This table shows the performance of various products, including details like assigned personnel, priority, and budget.
+
+### <a name="recent-transactions"></a>Recent Transactions
+
+A timeline of recent transactions. Each transaction details the time, description, and link, if applicable.
+
+### <a name="blog"></a>Blog
+
+This section displays products with images, ratings, prices, and sales prices. Users can add items to their cart directly from this section.
+
+## <a name="authentication"></a>5. Authentication
+
+### <a name="login"></a>Login
+
+Allows users to log in by entering their username and password. Users can also choose to remember their device.
+
+### <a name="register"></a>Register
+
+Allows users to create a new account by entering their name, email, and password.
+
+## <a name="sample-page"></a>6. Sample Page
+
+A placeholder page demonstrating how to create additional pages. It includes a title and a card with a sample message.
+
+## <a name="documentation"></a>7. Documentation Page
+
+The Documentation Page provides an overview of the features available in the application, including user-friendly interface, customizable settings, security measures, regular updates, and achievements/rewards.
+
+Thank you for using our application!
+>>>>>>> REPLACE
