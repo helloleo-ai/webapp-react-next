@@ -1,16 +1,16 @@
-import dynamic from "next/dynamic";
-const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { useTheme } from '@mui/material/styles';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
+import dynamic from "next/dynamic";
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const OlympicMedalsGraph = () => {
   const theme = useTheme();
 
-  const optionslinechart: any = {
+  const optionslinechart = {
     chart: {
       height: 350,
       type: 'line',
-      fontFamily: "'Plus Jakarta Sans', sans-serif;",
+      fontFamily: "'Plus Jakarta Sans', sans-serif",
       foreColor: '#adb0bb',
       zoom: {
         enabled: false
@@ -31,7 +31,7 @@ const OlympicMedalsGraph = () => {
     },
   };
 
-  const serieslinechart: any = [
+  const serieslinechart = [
     {
       name: "USA",
       data: [10, 15, 22, 28, 35, 41, 48]
@@ -56,12 +56,14 @@ const OlympicMedalsGraph = () => {
 
   return (
     <DashboardCard title="Olympic Medals - Top 5 Countries">
-      <Chart
-        options={optionslinechart}
-        series={serieslinechart}
-        type="line"
-        height="350px"
-      />
+      {typeof window !== 'undefined' && (
+        <Chart
+          options={optionslinechart}
+          series={serieslinechart}
+          type="line"
+          height={350}
+        />
+      )}
     </DashboardCard>
   );
 };
