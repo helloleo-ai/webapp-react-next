@@ -8,6 +8,7 @@ import RecentTransactions from '@/app/(DashboardLayout)/components/dashboard/Rec
 import ProductPerformance from '@/app/(DashboardLayout)/components/dashboard/ProductPerformance';
 import Blog from '@/app/(DashboardLayout)/components/dashboard/Blog';
 import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/MonthlyEarnings';
+import OlympicMedalsGraph from '@/app/(DashboardLayout)/components/dashboard/OlympicMedalsGraph';
 
 const Dashboard = () => {
   return (
@@ -29,6 +30,9 @@ const Dashboard = () => {
                 <MonthlyEarnings />
               </Grid>
             </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <OlympicMedalsGraph />
           </Grid>
           <Grid item xs={12} lg={4}>
             <RecentTransactions />
