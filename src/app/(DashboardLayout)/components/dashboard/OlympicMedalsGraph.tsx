@@ -1,10 +1,19 @@
+'use client';
+
 import { useTheme } from '@mui/material/styles';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
 import dynamic from "next/dynamic";
+import { useState, useEffect } from 'react';
+
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const OlympicMedalsGraph = () => {
   const theme = useTheme();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const optionslinechart = {
     chart: {
@@ -56,7 +65,7 @@ const OlympicMedalsGraph = () => {
 
   return (
     <DashboardCard title="Olympic Medals - Top 5 Countries">
-      {typeof window !== 'undefined' && (
+      {isClient && (
         <Chart
           options={optionslinechart}
           series={serieslinechart}
