@@ -1,5 +1,5 @@
 'use client'
-import { Typography, Grid, Box } from '@mui/material';
+import { Typography, Grid, Box, Tooltip } from '@mui/material';
 import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
 import SalesOverview from '@/app/(DashboardLayout)/components/dashboard/SalesOverview';
 import YearlyBreakup from '@/app/(DashboardLayout)/components/dashboard/YearlyBreakup';
@@ -23,31 +23,59 @@ const Dashboard = () => {
         <Typography variant="h2" gutterBottom sx={{ color: 'white' }}>
           Welcome to your Dashboard 👋
         </Typography>
-        <Grid container spacing={3}>
+<Grid container spacing={3}>
           <Grid item xs={12} lg={8}>
-            <SalesOverview />
+            <Tooltip title="Overview of sales performance and trends" arrow>
+              <Box sx={{ width: '100%', height: '100%' }}>
+                <SalesOverview />
+              </Box>
+            </Tooltip>
           </Grid>
           <Grid item xs={12} lg={4}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
-                <YearlyBreakup />
+                <Tooltip title="Breakdown of yearly revenue by category" arrow>
+                  <Box sx={{ width: '100%', height: '100%' }}>
+                    <YearlyBreakup />
+                  </Box>
+                </Tooltip>
               </Grid>
               <Grid item xs={12}>
-                <MonthlyEarnings />
+                <Tooltip title="Monthly earnings trend and comparison" arrow>
+                  <Box sx={{ width: '100%', height: '100%' }}>
+                    <MonthlyEarnings />
+                  </Box>
+                </Tooltip>
               </Grid>
             </Grid>
           </Grid>
           <Grid item xs={12}>
-            <OlympicMedalsGraph />
+            <Tooltip title="Comparison of Olympic medals won by countries" arrow>
+              <Box sx={{ width: '100%', height: '100%' }}>
+                <OlympicMedalsGraph />
+              </Box>
+            </Tooltip>
           </Grid>
           <Grid item xs={12} lg={4}>
-            <RecentTransactions />
+            <Tooltip title="List of recent financial transactions" arrow>
+              <Box sx={{ width: '100%', height: '100%' }}>
+                <RecentTransactions />
+              </Box>
+            </Tooltip>
           </Grid>
           <Grid item xs={12} lg={8}>
-            <ProductPerformance />
+            <Tooltip title="Performance metrics of various products" arrow>
+              <Box sx={{ width: '100%', height: '100%' }}>
+                <ProductPerformance />
+              </Box>
+            </Tooltip>
           </Grid>
           <Grid item xs={12}>
-            <Blog />
+            <Tooltip title="Latest blog posts and updates" arrow>
+              <Box sx={{ width: '100%', height: '100%' }}>
+                <Blog />
+              </Box>
+            </Tooltip>
           </Grid>
         </Grid>
       </Box>
