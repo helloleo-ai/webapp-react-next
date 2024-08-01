@@ -1,7 +1,8 @@
 'use client'
-import { Typography, Grid, Box, Tooltip } from '@mui/material';
+import { Typography, Grid, Box, Tooltip, Button } from '@mui/material';
 import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
 import SalesOverview from '@/app/(DashboardLayout)/components/dashboard/SalesOverview';
+import { useState } from 'react';
 import YearlyBreakup from '@/app/(DashboardLayout)/components/dashboard/YearlyBreakup';
 import RecentTransactions from '@/app/(DashboardLayout)/components/dashboard/RecentTransactions';
 import ProductPerformance from '@/app/(DashboardLayout)/components/dashboard/ProductPerformance';
@@ -10,6 +11,12 @@ import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/Monthl
 import OlympicMedalsGraph from '@/app/(DashboardLayout)/components/dashboard/OlympicMedalsGraph';
 
 const Dashboard = () => {
+  const [showSalesOverview, setShowSalesOverview] = useState(true);
+
+  const toggleSalesOverview = () => {
+    setShowSalesOverview(!showSalesOverview);
+  };
+
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
       <Box
@@ -23,14 +30,24 @@ const Dashboard = () => {
         <Typography variant="h2" gutterBottom sx={{ color: 'white' }}>
           Welcome to your Dashboard 👋
         </Typography>
-<Grid container spacing={3}>
-          <Grid item xs={12} lg={8}>
-            <Tooltip title="Overview of sales performance and trends" arrow>
-              <Box sx={{ width: '100%', height: '100%' }}>
-                <SalesOverview />
-              </Box>
-            </Tooltip>
-          </Grid>
+        <Button
+          variant="contained"
+          color="secondary"
+          onClick={toggleSalesOverview}
+          sx={{ mb: 2 }}
+        >
+          {showSalesOverview ? 'Hide' : 'Show'} Sales Overview
+        </Button>
+        <Grid container spacing={3}>
+          {showSalesOverview && (
+            <Grid item xs={12} lg={8}>
+              <Tooltip title="Overview of sales performance and trends" arrow>
+                <Box sx={{ width: '100%', height: '100%' }}>
+                  <SalesOverview />
+                </Box>
+              </Tooltip>
+            </Grid>
+          )}
           <Grid item xs={12} lg={4}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
