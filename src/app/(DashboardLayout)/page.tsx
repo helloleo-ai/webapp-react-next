@@ -8,7 +8,6 @@ import RecentTransactions from '@/app/(DashboardLayout)/components/dashboard/Rec
 import ProductPerformance from '@/app/(DashboardLayout)/components/dashboard/ProductPerformance';
 import Blog from '@/app/(DashboardLayout)/components/dashboard/Blog';
 import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/MonthlyEarnings';
-import OlympicMedalsGraph from '@/app/(DashboardLayout)/components/dashboard/OlympicMedalsGraph';
 import ChartModal from '@/app/(DashboardLayout)/components/dashboard/ChartModal';
 
 const Dashboard = () => {
