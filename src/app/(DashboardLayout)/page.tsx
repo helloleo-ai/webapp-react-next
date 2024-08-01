@@ -13,10 +13,18 @@ import OlympicMedalsGraph from '@/app/(DashboardLayout)/components/dashboard/Oly
 const Dashboard = () => {
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
-      <Typography variant="h2" gutterBottom>
-              Welcome to your Dashboard 👋
-            </Typography>
-            <Box>
+      <Box
+        sx={{
+          background: 'linear-gradient(to right, #8e2de2, #4a00e0)',
+          minHeight: '100vh',
+          padding: '20px',
+          borderRadius: '15px',
+        }}
+      >
+        <Typography variant="h2" gutterBottom sx={{ color: 'white' }}>
+          Welcome to your Dashboard 👋
+        </Typography>
+        <Box>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={8}>
             <SalesOverview />
