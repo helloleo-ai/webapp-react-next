@@ -2,12 +2,15 @@
   "name": "modernize-next-free",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gitname.github.io/webapp-react-next-325b9104-f675-4129-9123-e1d436c6147c",
 "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@emotion/cache": "11.11.0",
@@ -33,6 +36,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@types/lodash": "4.14.196"
+    "@types/lodash": "4.14.196",
+    "gh-pages": "^6.0.0"
   }
 }
