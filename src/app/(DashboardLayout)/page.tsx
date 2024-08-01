@@ -43,7 +43,7 @@ export default function Dashboard() {
 }
 'use client'
 import { Typography, Grid, Box } from '@mui/material';
-'use client';
+'use client'
 import { Grid, Box } from '@mui/material';
 import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
 import SalesOverview from '@/app/(DashboardLayout)/components/dashboard/SalesOverview';
@@ -52,6 +52,7 @@ import RecentTransactions from '@/app/(DashboardLayout)/components/dashboard/Rec
 import ProductPerformance from '@/app/(DashboardLayout)/components/dashboard/ProductPerformance';
 import Blog from '@/app/(DashboardLayout)/components/dashboard/Blog';
 import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/MonthlyEarnings';
+import OlympicMedalsGraph from '@/app/(DashboardLayout)/components/dashboard/OlympicMedalsGraph';
 
 const Dashboard = () => {
   return (
