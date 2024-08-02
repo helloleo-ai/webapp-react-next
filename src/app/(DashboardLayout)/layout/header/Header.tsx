@@ -7,12 +7,13 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 import Link from 'next/link';
 // components
 import React from 'react';
-import { Box, AppBar, Toolbar, styled, Stack, IconButton, Badge } from '@mui/material';
+import { Box, AppBar, Toolbar, styled, Stack, IconButton, Badge, Switch } from '@mui/material';
 import PropTypes from 'prop-types';
+import { useTheme } from "@/utils/theme/ThemeContext";
 
 // components
 import Profile from './Profile';
-import { IconBellRinging, IconMenu } from '@tabler/icons-react';
+import { IconBellRinging, IconMenu, IconMoon, IconSun } from '@tabler/icons-react';
 
 interface ItemType {
   toggleMobileSidebar: (event: React.MouseEvent<HTMLElement>) => void;
@@ -34,6 +35,7 @@ const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
 }));
 
 const Header = ({ toggleMobileSidebar }: ItemType) => {
+  const { toggleColorMode, mode } = useTheme();
   return (
     <AppBarStyled position="sticky" color="default">
       <ToolbarStyled>
@@ -61,7 +63,10 @@ const Header = ({ toggleMobileSidebar }: ItemType) => {
           </Badge>
         </IconButton>
         <Box flexGrow={1} />
-        <Stack spacing={1} direction="row" alignItems="center">
+<Stack spacing={1} direction="row" alignItems="center">
+          <IconButton onClick={toggleColorMode} color="inherit">
+            {mode === 'dark' ? <IconSun size="20" /> : <IconMoon size="20" />}
+          </IconButton>
           <Profile />
         </Stack>
       </ToolbarStyled>
