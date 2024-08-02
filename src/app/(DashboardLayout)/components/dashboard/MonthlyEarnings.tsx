@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { useTheme } from '@mui/material/styles';
+import React from 'react';
 import { Stack, Typography, Avatar, Fab, Tooltip } from '@mui/material';
 import { IconArrowDownRight, IconCurrencyDollar } from '@tabler/icons-react';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
@@ -55,8 +56,8 @@ const MonthlyEarnings = () => {
   return (
     <DashboardCard
       title="Monthly Earnings"
-action={
-        <Tooltip title="Displays the total earnings for the current month">
+      action={
+        <Tooltip title="Displays the total earnings for the current month" arrow>
           <Fab color="secondary" size="medium" sx={{color: '#ffffff'}}>
             <IconCurrencyDollar width={24} />
           </Fab>
@@ -71,9 +72,11 @@ action={
           $6,820
         </Typography>
         <Stack direction="row" spacing={1} my={1} alignItems="center">
-          <Avatar sx={{ bgcolor: errorlight, width: 27, height: 27 }}>
-            <IconArrowDownRight width={20} color="#FA896B" />
-          </Avatar>
+          <Tooltip title="9% decrease from last year" arrow placement="right">
+            <Avatar sx={{ bgcolor: errorlight, width: 27, height: 27 }}>
+              <IconArrowDownRight width={20} color="#FA896B" />
+            </Avatar>
+          </Tooltip>
           <Typography variant="subtitle2" fontWeight="600">
             +9%
           </Typography>
