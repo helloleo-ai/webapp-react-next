@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, Theme } from "@mui/material/styles";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
 export const plus = Plus_Jakarta_Sans({
@@ -8,7 +8,7 @@ export const plus = Plus_Jakarta_Sans({
   fallback: ["Helvetica", "Arial", "sans-serif"],
 });
 
-const baselightTheme = createTheme({
+const baseTheme = {
   direction: "ltr",
   palette: {
     primary: {
@@ -62,7 +62,7 @@ const baselightTheme = createTheme({
       hoverOpacity: 0.02,
       hover: "#f6f9fc",
     },
-    divider: "#e5eaef",
+divider: "#e5eaef",
   },
   typography: {
     fontFamily: plus.style.fontFamily,
@@ -140,6 +140,29 @@ const baselightTheme = createTheme({
       },
     },
   },
+};
+
+const lightTheme = createTheme({
+  ...baseTheme,
+  palette: {
+    mode: 'light',
+    ...baseTheme.palette,
+  },
 });
 
-export { baselightTheme };
+const darkTheme = createTheme({
+  ...baseTheme,
+  palette: {
+    mode: 'dark',
+    background: {
+      default: '#1a2035',
+      paper: '#222b45',
+    },
+    text: {
+      primary: '#ffffff',
+      secondary: '#8492c4',
+    },
+  },
+});
+
+export { lightTheme, darkTheme };
