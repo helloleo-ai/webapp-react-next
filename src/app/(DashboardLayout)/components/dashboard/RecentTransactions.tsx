@@ -1,5 +1,7 @@
 
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
+import { Tooltip, IconButton } from '@mui/material';
+import { IconInfoCircle } from '@tabler/icons-react';
 import {
   Timeline,
   TimelineItem,
@@ -14,7 +16,16 @@ import { Link, Typography } from '@mui/material';
 
 const RecentTransactions = () => {
   return (
-    <DashboardCard title="Recent Transactions">
+    <DashboardCard 
+          title="Recent Transactions"
+          action={
+            <Tooltip title="Shows a timeline of the most recent financial transactions">
+              <IconButton>
+                <IconInfoCircle width={20} height={20} />
+              </IconButton>
+            </Tooltip>
+          }
+        >
       <>
         <Timeline
           className="theme-timeline"

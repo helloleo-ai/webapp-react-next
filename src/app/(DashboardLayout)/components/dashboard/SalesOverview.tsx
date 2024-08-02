@@ -2,6 +2,8 @@ import React from 'react';
 import { Select, MenuItem } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
+import { Tooltip, IconButton } from '@mui/material';
+import { IconInfoCircle } from '@tabler/icons-react';
 import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
@@ -91,7 +93,16 @@ const SalesOverview = () => {
 
     return (
 
-        <DashboardCard title="Sales Overview" action={
+<DashboardCard 
+      title="Sales Overview"
+      action={
+        <Tooltip title="Displays the sales performance over time, showing trends and patterns in revenue generation">
+          <IconButton>
+            <IconInfoCircle width={20} height={20} />
+          </IconButton>
+        </Tooltip>
+      }
+    >
             <Select
                 labelId="month-dd"
                 id="month-dd"

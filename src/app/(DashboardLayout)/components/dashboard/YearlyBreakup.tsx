@@ -6,6 +6,8 @@ import { Grid, Stack, Typography, Avatar } from '@mui/material';
 import { IconArrowUpLeft } from '@tabler/icons-react';
 
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
+import { Tooltip, IconButton } from '@mui/material';
+import { IconInfoCircle } from '@tabler/icons-react';
 
 const YearlyBreakup = () => {
   // chart color
@@ -63,7 +65,16 @@ const YearlyBreakup = () => {
   const seriescolumnchart: any = [38, 40, 25];
 
   return (
-    <DashboardCard title="Yearly Breakup">
+    <DashboardCard 
+          title="Yearly Breakup"
+          action={
+            <Tooltip title="Shows the distribution of revenue across different segments for the year">
+              <IconButton>
+                <IconInfoCircle width={20} height={20} />
+              </IconButton>
+            </Tooltip>
+          }
+        >
       <Grid container spacing={3}>
         {/* column */}
         <Grid item xs={7} sm={7}>
