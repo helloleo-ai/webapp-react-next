@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 import { useTheme } from '@mui/material/styles';
 import { Grid, Stack, Typography, Avatar } from '@mui/material';
-import { IconArrowUpLeft } from '@tabler/icons-react';
+import { IconArrowUpLeft, IconCalendar } from '@tabler/icons-react';
 
 import DashboardCard from '@/app/(DashboardLayout)/components/shared/DashboardCard';
 
@@ -81,19 +81,15 @@ const YearlyBreakup = () => {
               last year
             </Typography>
           </Stack>
-          <Stack spacing={3} mt={5} direction="row">
+<Stack spacing={3} mt={5} direction="row">
             <Stack direction="row" spacing={1} alignItems="center">
-              <Avatar
-                sx={{ width: 9, height: 9, bgcolor: primary, svg: { display: 'none' } }}
-              ></Avatar>
+              <IconCalendar size={16} color={primary} />
               <Typography variant="subtitle2" color="textSecondary">
                 2022
               </Typography>
             </Stack>
             <Stack direction="row" spacing={1} alignItems="center">
-              <Avatar
-                sx={{ width: 9, height: 9, bgcolor: primarylight, svg: { display: 'none' } }}
-              ></Avatar>
+              <IconCalendar size={16} color={primarylight} />
               <Typography variant="subtitle2" color="textSecondary">
                 2023
               </Typography>
