@@ -5,11 +5,6 @@ import { useTheme } from "@/utils/theme/ThemeContext";
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import Link from 'next/link';
-// components
-import React from 'react';
-import { Box, AppBar, Toolbar, styled, Stack, IconButton, Badge, Switch } from '@mui/material';
-import PropTypes from 'prop-types';
-import { useTheme } from "@/utils/theme/ThemeContext";
 
 // components
 import Profile from './Profile';
