@@ -1,5 +1,7 @@
-import React from "react";
-import { Card, CardContent, Typography, Stack, Box } from "@mui/material";
+import React, { useState } from "react";
+import { Card, CardContent, Typography, Stack, Box, IconButton, Collapse } from "@mui/material";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 type Props = {
   title?: string;
@@ -24,6 +26,12 @@ const DashboardCard = ({
   headsubtitle,
   middlecontent,
 }: Props) => {
+  const [expanded, setExpanded] = useState(true);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <Card sx={{ padding: 0 }} elevation={9} variant={undefined}>
       {cardheading ? (
@@ -54,11 +62,22 @@ const DashboardCard = ({
                   ""
                 )}
               </Box>
-              {action}
+              <Box>
+                {action}
+                <IconButton
+                  onClick={handleExpandClick}
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                >
+                  {expanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+                </IconButton>
+              </Box>
             </Stack>
           ) : null}
 
-          {children}
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            {children}
+          </Collapse>
         </CardContent>
       )}
 
